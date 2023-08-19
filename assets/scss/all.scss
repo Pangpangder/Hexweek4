@@ -1,5 +1,10 @@
+@import './cssreset.scss';
+@import './variables.scss';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
+@import './pages/faq.scss';
+@import './pages/link';
+

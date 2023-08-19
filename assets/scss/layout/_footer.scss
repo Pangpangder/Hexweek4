@@ -1,4 +1,145 @@
+@mixin pad{
+    @media(max-width:$mw-pad){
+      @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:$mw-mobile){
+      @content;
+    }
+}
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+    background-color: $secondary;
+    padding-top: 48px;
+}
+.container-footer{
+    max-width: $mwcontainer-pc;
+    margin: 0 auto;
+    padding: 0px 12px;
+    display: flex;
+    flex-direction: column;
+    @include pad{
+        max-width: $mwcontainer-pad;
+    }
+    @include mobile{
+        max-width: $mwcontainer-mobile;
+    }
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    display: flex;
+    align-items: center;
+}
+.social-icon{
+    display: flex;
+}
+.wh-48{
+    width: 48px;
+    height: 48px;
+}
+.mr-32{
+    margin-right: 32px;
+}
+.fc-w{
+   color:$light; 
+}
+.mr-48{
+    margin-right: 48px;
+}
+.changeble-rwd{
+   display: flex;
+   flex-direction: column;
+   @include mobile{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+   }
+}
+.fs-36{
+    font-size: 36px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mid{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #fff;
+    @include mobile{
+        border-bottom: 0px;
+    }
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+    @include pad{
+        padding-bottom: 40px;
+    }
+    @include mobile{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+}
+.policy{
+    display: flex;
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.wh-40{
+    @include pad{
+        width: 40px;
+        height: 40px;
+    }
+}
+.md-mr-16{
+    @include pad{
+        margin-right: 16px;
+    }
+}
+.tab{
+    @include mobile{
+      display: none;
+    }
+}
+.sm-wh-24{
+    @include mobile{
+        width: 24px;
+        height: 24px;
+    }   
+}
+.sm-fs-16{
+    @include mobile{
+        font-size: $fs-normall;
+    }
+}
+.sm-mr-8{
+    @include mobile{
+        margin-right: 8px;
+    }
+}
+.sm-mb-8{
+    @include mobile{
+        margin-bottom: 8px;
+    }
+}
+.material-icons-outlined{
+    font-size: 48px;
+    color: #fff;
+    @include mobile{
+        font-size: 24px;
+    }
 }
