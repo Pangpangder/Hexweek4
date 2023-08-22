@@ -170,16 +170,16 @@
     display: flex;
     margin-left: -12px;
     margin-right: -12px;
-    @include pad{
+    @media(max-width:993px){
         flex-direction: column;
         align-items: center;
-    }
+    } 
     &-item{
         padding: 0px 12px; 
-        @include pad{
+        @media(max-width:993px){
             width: 50%;
             margin-bottom: 24px;
-        }
+        } 
         @include mobile{
             width: 100%;
         }

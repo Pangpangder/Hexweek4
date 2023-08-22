@@ -15,17 +15,24 @@
  }
  .navbar{
      padding: 16px 0px;
-     @include mobile{
+     @include pad{
         padding-bottom: 0px;
-    }
+     }
+    //  @include mobile{
+    //     padding-bottom: 0px;
+    // }
  }
  .navbar-logo{
      display: block;
      width: 80px;
-     @include mobile{
+     @include pad{
         margin-bottom: 15px;
         margin-left: 15px;
-    }
+     }
+    //  @include mobile{
+    //     margin-bottom: 15px;
+    //     margin-left: 15px;
+    // }
  }
  a{
      text-decoration: none;
@@ -35,42 +42,63 @@
      margin: 0 auto;
      padding: 0px 12px;
  
-      @include pad{
-        max-width: 720px;
-      }
- 
-      @include mobile{
-        max-width: 372px;
+     @media(max-width:768px){
+        max-width: 768px;
         padding-left: 0px;
         padding-right: 0px;
-      }
+     }
+     @include pad{
+        max-width: 768px;
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+    //   @include mobile{
+    //     max-width: 372px;
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    //   }
  }
  .navbar-wrap{
      display: flex;
      justify-content: space-between;
-     
-     @include mobile{
+    @include pad{
         flex-direction: column;
-     }
+    }
+    //  @include mobile{
+    //     flex-direction: column;
+    //  }
  }
  .navbar-nav{
      display: flex;
      align-items: center;
-
-     @include mobile{
+     @include pad{
         flex-wrap: wrap;
      }
+    //  @include mobile{
+    //     flex-wrap: wrap;
+    //  }
  }
  .navbar-item{
      margin-right: 64px;
-     @include mobile{
+      @include pad{
         margin-right: 0px;
-       width: 50%;
-       text-align: center;
-       border: 1px solid #fff;
-       padding:12px 0px;
-     }
+        width: 50%;
+        text-align: center;
+        border: 1px solid #fff;
+        padding:12px 0px;
+      }
+    //  @include mobile{
+    //     margin-right: 0px;
+    //    width: 50%;
+    //    text-align: center;
+    //    border: 1px solid #fff;
+    //    padding:12px 0px;
+    //  }
  }
+ .navbar-item a{
+    text-decoration: none;
+    display: block;
+}
  .navbar-link{
      color: $light;
      font-size: $fs-medium;
