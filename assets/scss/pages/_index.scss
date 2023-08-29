@@ -137,9 +137,9 @@
 .classic{
     padding-top: 80px;
     padding-bottom: 80px;
-   @include mobile{
-     padding-top: 40px;
-     padding-bottom: 40px;
+    @media(max-width:576px){
+        padding-top: 40px;
+        padding-bottom: 40px;
    }
    &-container{
     max-width: $mwcontainer-pc;
@@ -159,10 +159,10 @@
         font-weight: $fw-b;
         color: $primary;
         margin-bottom: 48px;
-        @include mobile{
-         font-size: $fs-exmedium;
-         margin-bottom: 24px;
-        }
+        @media(max-width:576px){
+            font-size: 24px;
+            margin-bottom: 24px;
+       }
     }
    }
 }
@@ -180,9 +180,9 @@
             width: 50%;
             margin-bottom: 24px;
         } 
-        @include mobile{
+        @media(max-width:576px){
             width: 100%;
-        }
+        } 
     }
     &-text{
         font-family: 'Roboto';

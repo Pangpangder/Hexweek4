@@ -52,7 +52,7 @@
 .changeble-rwd{
    display: flex;
    flex-direction: column;
-   @include mobile{
+   @include pad{
     flex-direction: row-reverse;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
@@ -71,7 +71,7 @@
 .mid{
     padding-bottom: 32px;
     border-bottom: 1px solid #fff;
-    @include mobile{
+    @include pad{
         border-bottom: 0px;
     }
 }
@@ -79,10 +79,10 @@
     display: flex;
     justify-content: space-between;
     padding: 32px 0px;
+    // @include pad{
+    //     padding-bottom: 40px;
+    // }
     @include pad{
-        padding-bottom: 40px;
-    }
-    @include mobile{
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 16px;
@@ -91,7 +91,7 @@
 }
 .policy{
     display: flex;
-    @include mobile{
+    @include pad{
         flex-direction: column;
     }
 }
@@ -111,35 +111,35 @@
     }
 }
 .tab{
-    @include mobile{
+    @include pad{
       display: none;
     }
 }
 .sm-wh-24{
-    @include mobile{
+    @include pad{
         width: 24px;
         height: 24px;
     }   
 }
 .sm-fs-16{
-    @include mobile{
+    @include pad{
         font-size: $fs-normall;
     }
 }
 .sm-mr-8{
-    @include mobile{
+    @include pad{
         margin-right: 8px;
     }
 }
 .sm-mb-8{
-    @include mobile{
+    @include pad{
         margin-bottom: 8px;
     }
 }
 .material-icons-outlined{
     font-size: 48px;
     color: #fff;
-    @include mobile{
+    @include pad{
         font-size: 24px;
     }
 }
