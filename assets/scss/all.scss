@@ -1,5 +1,5 @@
-@import './cssreset.scss';
-@import './variables.scss';
+@import './base/cssreset';
+@import './base/variables';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

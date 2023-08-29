@@ -222,7 +222,7 @@
             max-width:$mwcontainer-pad;
         }
         @include mobile{
-            min-width: $mwcontainer-mobile;
+            max-width: $mwcontainer-mobile;
         }
         h2{
             font-size: $fs-large;
